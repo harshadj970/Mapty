@@ -148,6 +148,10 @@ body {
   #map{
     height: 400px;
   }
+  .app .workout-container{
+    max-height: 600px;
+    height: fit-content;
+  }
 
 }
 
@@ -157,7 +161,6 @@ body {
     justify-content: center;
     gap: 8px;
     height:auto;
-    padding:0.3rem;
   }
   .app .workout-container{
     height: 900px;
