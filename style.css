@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.app .workout-container {
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 33%;
+  background-color: #2d3439;
+  height: 100%;
+  min-width: 400px;
+  overflow: hidden;
+  /* max-height: 600px; */
+  overflow-y: scroll;
+}
+.app .workout-container::-webkit-scrollbar{
+  visibility: hidden;
+}
+.app .workout-container nav img {
+  width: 160px;
+}
+.app .workout-container .footer {
+  color: rgb(154, 153, 153);
+  position: relative;
+}
+.footer span {
+  text-decoration: underline rgb(154, 153, 153);
+}
+.app #map {
+  min-width: 400px;
+  width: 62%;
+  height: 100%;
+  padding: 2rem;
+  background-color: rgba(181, 176, 176, 0.865);
+}
+.app .workout-container .form input,
+.form select {
+  max-width: 5rem;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  outline: none;
+}
+.app .workout-container form input:placeholder-shown {
+  padding: 4px 8px;
+}
+.app .workout-container .form {
+  padding: 1rem;
+  background-color: #40494d;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  margin-block: 1rem;
+}
+.app .workout-container .form .form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.list .list-wraper {
+  border-left: 5px solid rgb(254, 179, 41);
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: #40494d;
+  margin-block: 0.5rem;
+  width: 380px;
+}
+.list .list-content {
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: space-between;
+}
+.list .list-content p{
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.list .list-content span {
+  color: rgb(154, 153, 153);
+  font-size: 0.7rem;
+}
+.hidden {
+  display: none !important;
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #1f2224;
+  box-shadow: none;
+  border-radius: 5px;
+}
+.leaflet-popup .leaflet-popup-tip {
+  background-color: #1f2224;
+}
+.leaflet-popup .leaflet-popup-content {
+  color: white;
+}
+.running-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(254, 179, 41);
+}
+.cycling-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(36, 209, 36);
+}
+.temp-marker .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(1, 139, 198);
+}
+.list-outer {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+}
+.list-wrapper-cycling {
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: #40494d;
+  margin-block: 0.5rem;
+  border-left: 5px solid rgb(36, 209, 36);
+  width: 380px;
+}
+.live-marker{
+  filter: hue-rotate(185);
+}
+
+@media (max-width:500px) {
+  .app{
+    flex-direction: column;
+    width: fit-content;
+  }
+  #map{
+    height: 400px;
+  }
+
+}
+
+@media (max-width:800px) {
+  .app{
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    height:auto;
+  }
+  .app .workout-container{
+    height: 900px;
+  }
+  #map{
+    min-width: 400px;
+    min-height:400px;
+  }
+}

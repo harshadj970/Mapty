@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapty-Map your workouts</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="workout-container">
+        <nav>
+          <img src="logo.png" alt="" />
+        </nav>
+        <div class="list">
+          <div class="form hidden">
+            <div class="form-row">
+              <span>Type</span>
+              <select name="" id="" class="type">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <span>Distance</span>
+              <input type="text" placeholder="km" class="distance" />
+            </div>
+            <div class="form-row">
+              <span>Duration</span>
+              <input type="text" placeholder="min" class="time" />
+            </div>
+            <div class="form-row">
+              <span>Cadence</span>
+              <input type="text" placeholder="step/min" class="sm" />
+            </div>
+            <div class="form-row hidden">
+              <span>Elev Gain</span>
+              <input type="text" placeholder="meter" class="elevGain" />
+            </div>
+          </div>
+          <div class="list-outer">
+            
+          </div>
+        </div>
+        <div class="footer">© copyright by <span>Mapty</span>.</div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
