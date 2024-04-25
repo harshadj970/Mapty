@@ -144,7 +144,7 @@ body {
     flex-direction: column;
     width: fit-content;
     width:100vw;
-    padding:0.3rem;
+    padding:0.8rem;
   }
   #map{
     height: 400px;
