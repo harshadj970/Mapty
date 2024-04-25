@@ -143,7 +143,6 @@ body {
   .app{
     flex-direction: column;
     width: fit-content;
-    width:95vw;
     padding:0.8rem;
   }
   #map{
