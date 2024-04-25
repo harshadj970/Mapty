@@ -156,6 +156,7 @@ body {
     justify-content: center;
     gap: 8px;
     height:auto;
+    padding:0.3rem;
   }
   .app .workout-container{
     height: 900px;
