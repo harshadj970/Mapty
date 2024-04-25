@@ -157,6 +157,7 @@ body {
     gap: 8px;
     height:auto;
     padding:0.3rem;
+    width:100vw;
   }
   .app .workout-container{
     height: 900px;
